@@ -1,3 +1,25 @@
+body {
+  margin: 0;
+}
 
+.container {
+  display: flex;
+}
+
+header .enteteSite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-bottom: solid 1px #fcca46;
+  background-color: #f7f7f7;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+header h1 {
+  color: #fcca46;
+  font-size: 4rem;
+  font-family: "Vollkorn", serif;
+}
 
 /*# sourceMappingURL=style.css.map */
