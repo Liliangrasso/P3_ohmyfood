@@ -1,11 +1,7 @@
 
 
 $bg-color: #f7f7f7;
-
-
-body{
-    margin: 0;
-}
+$bd-color: #fcca46;
 
 .container{
     display: flex;
@@ -19,11 +15,131 @@ header{
         border-bottom: solid 1px #fcca46;
         background-color: $bg-color;
         opacity: 0.8;
-        background-attachment: fixed;
+        
     }
     h1{
         color: #fcca46;
         font-size: 4rem;
         font-family: 'Vollkorn', serif;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+}
+
+body{
+    margin: 0;
+    .rechercheContainer{
+        display: flex;
+    }
+    .recherche{
+        margin: auto;
+    }
+    .cartesContainer{
+        border: 1px solid black;
+        height: 1950px;
+    }
+    .cartes{
+        display: flex;
+        border: 1px solid red;
+        height: 1700px;
+        width: 1400px;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .carteUne{
+        border: 1px solid green;
+        margin-top: 100px;
+        height: 700px;
+        width: 500px;
+        margin-right: 50px;
+        box-sizing: border-box;
+        display: block;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+    .carteDeux{
+        margin-top: 100px;
+        border: 1px solid green;
+        height: 700px;
+        width: 500px;
+        text-decoration: none;
+        box-sizing: border-box;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+    .carteTrois{
+        border: 1px solid green;
+        height: 700px;
+        width: 500px;
+        margin-right: 50px;
+        box-sizing: border-box;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+    .carteQuatre{
+        border: 1px solid green;
+        height: 700px;
+        width: 500px;
+        transform: scale(1);
+        box-sizing: border-box;
+        transition-property: transform;
+        transition-duration: 500ms;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: $bd-color;
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 100px;
+        width: 340px;
+        text-decoration: none;
+        &:hover{
+            transition: ease-out 1s;
+        }
+    p{
+        display: flex;
+        font-size: 2rem;
+        text-decoration: none;
+        color: $bg-color;
+        }
+    }
+}
+
+footer{
+    .foot{
+        height: 100px;
+        display: flex;
+        background-color: $bg-color;
+        margin-top: 30px;
+        border-top: solid 1px #fcca46;
+        position:fixed;
+        width: 100%;
+        bottom: 0;
+        a{
+            text-decoration: none;
+            color: $bd-color;
+        }
     }
 }

@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .container {
   display: flex;
 }
@@ -14,12 +10,129 @@ header .enteteSite {
   border-bottom: solid 1px #fcca46;
   background-color: #f7f7f7;
   opacity: 0.8;
-  background-attachment: fixed;
 }
 header h1 {
   color: #fcca46;
   font-size: 4rem;
   font-family: "Vollkorn", serif;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+header h1:hover {
+  transform: scale(1.15);
+}
+
+body {
+  margin: 0;
+}
+body .rechercheContainer {
+  display: flex;
+}
+body .recherche {
+  margin: auto;
+}
+body .cartesContainer {
+  border: 1px solid black;
+  height: 1950px;
+}
+body .cartes {
+  display: flex;
+  border: 1px solid red;
+  height: 1700px;
+  width: 1400px;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .carteUne {
+  border: 1px solid green;
+  margin-top: 100px;
+  height: 700px;
+  width: 500px;
+  margin-right: 50px;
+  box-sizing: border-box;
+  display: block;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+body .carteUne:hover {
+  transform: scale(1.15);
+}
+body .carteDeux {
+  margin-top: 100px;
+  border: 1px solid green;
+  height: 700px;
+  width: 500px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+body .carteDeux:hover {
+  transform: scale(1.15);
+}
+body .carteTrois {
+  border: 1px solid green;
+  height: 700px;
+  width: 500px;
+  margin-right: 50px;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+body .carteTrois:hover {
+  transform: scale(1.15);
+}
+body .carteQuatre {
+  border: 1px solid green;
+  height: 700px;
+  width: 500px;
+  transform: scale(1);
+  box-sizing: border-box;
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+body .carteQuatre:hover {
+  transform: scale(1.15);
+}
+body .btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #fcca46;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 100px;
+  width: 340px;
+  text-decoration: none;
+}
+body .btn:hover {
+  transition: ease-out 1s;
+}
+body .btn p {
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+footer .foot {
+  height: 100px;
+  display: flex;
+  background-color: #f7f7f7;
+  margin-top: 30px;
+  border-top: solid 1px #fcca46;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer .foot a {
+  text-decoration: none;
+  color: #fcca46;
 }
 
 /*# sourceMappingURL=style.css.map */
