@@ -26,17 +26,57 @@ header h1:hover {
 body {
   margin: 0;
 }
-body .rechercheContainer {
-  display: flex;
-}
 body .recherche {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+body .recherche .search-box {
   margin: auto;
+  border: solid 1px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  max-height: 80px;
+}
+body .recherche .search-box .search-btn i {
+  z-index: 1;
+  background: #fcca46;
+  font-size: 25px;
+  color: #f7f7f7;
+  padding: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px 0 #fcca46;
+  position: absolute;
+  left: 90px;
+  top: 165px;
+}
+body .recherche button {
+  height: 45px;
+  width: 20px;
+  border: none;
+  outline: none;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+body .recherche input {
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 1.5rem;
+  background-color: #f7f7f7;
+  font-family: "Vollkorn", serif;
+  transition: all ease-in-out 0.4s;
+  margin-left: 100px;
 }
 body .cartesContainer {
   border: 1px solid black;
   height: 1950px;
 }
-body .cartes {
+body .cartesContainer .cartes {
   display: flex;
   border: 1px solid red;
   height: 1700px;
@@ -45,22 +85,40 @@ body .cartes {
   justify-content: center;
   flex-wrap: wrap;
 }
-body .carteUne {
+body .cartesContainer .cartes .carteUne {
   border: 1px solid green;
   margin-top: 100px;
   height: 700px;
   width: 500px;
   margin-right: 50px;
   box-sizing: border-box;
+  text-decoration: none;
   display: block;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
 }
-body .carteUne:hover {
+body .cartesContainer .cartes .carteUne:hover {
   transform: scale(1.15);
 }
-body .carteDeux {
+body .cartesContainer .cartes .carteUne .carteUneContenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 500px;
+}
+body .cartesContainer .cartes .carteUne .carteUneContenu p {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: 30px;
+}
+body .cartesContainer .cartes .carteUne .carteUneContenu i {
+  color: #000000;
+  font-size: 30px;
+}
+body .cartesContainer .cartes .carteDeux {
   margin-top: 100px;
   border: 1px solid green;
   height: 700px;
@@ -71,10 +129,23 @@ body .carteDeux {
   transition-property: transform;
   transition-duration: 500ms;
 }
-body .carteDeux:hover {
+body .cartesContainer .cartes .carteDeux:hover {
   transform: scale(1.15);
 }
-body .carteTrois {
+body .cartesContainer .cartes .carteDeux .carteDeuxContenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 500px;
+}
+body .cartesContainer .cartes .carteDeux .carteDeuxContenu p {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: 30px;
+}
+body .cartesContainer .cartes .carteTrois {
   border: 1px solid green;
   height: 700px;
   width: 500px;
@@ -83,11 +154,25 @@ body .carteTrois {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
+  text-decoration: none;
 }
-body .carteTrois:hover {
+body .cartesContainer .cartes .carteTrois:hover {
   transform: scale(1.15);
 }
-body .carteQuatre {
+body .cartesContainer .cartes .carteTrois .carteTroisContenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 500px;
+}
+body .cartesContainer .cartes .carteTrois .carteTroisContenu p {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: 30px;
+}
+body .cartesContainer .cartes .carteQuatre {
   border: 1px solid green;
   height: 700px;
   width: 500px;
@@ -95,9 +180,23 @@ body .carteQuatre {
   box-sizing: border-box;
   transition-property: transform;
   transition-duration: 500ms;
+  text-decoration: none;
 }
-body .carteQuatre:hover {
+body .cartesContainer .cartes .carteQuatre:hover {
   transform: scale(1.15);
+}
+body .cartesContainer .cartes .carteQuatre .carteQuatreContenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 500px;
+}
+body .cartesContainer .cartes .carteQuatre .carteQuatreContenu p {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: 30px;
 }
 body .btn {
   display: flex;
@@ -129,10 +228,15 @@ footer .foot {
   position: fixed;
   width: 100%;
   bottom: 0;
+  justify-content: center;
 }
 footer .foot a {
   text-decoration: none;
   color: #fcca46;
+  font-size: 2.3rem;
+  margin-right: 350px;
+  margin-left: 350px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

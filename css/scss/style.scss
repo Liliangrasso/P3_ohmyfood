@@ -32,79 +32,179 @@ header{
 
 body{
     margin: 0;
-    .rechercheContainer{
-        display: flex;
-    }
     .recherche{
-        margin: auto;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        .search-box{
+            margin: auto;
+            border: solid 1px;
+            background-color: $bg-color;
+            border-radius: 20px;
+            max-height: 80px;
+            .search-btn i{
+                z-index: 1;
+                background: $bd-color;
+                font-size: 25px;
+                color: $bg-color;
+                padding: 15px;
+                padding-right: 15px;
+                border-radius: 30px;
+                box-shadow: 0 0 25px 0 $bd-color;
+                position: absolute;
+                left:90px;
+                top: 165px;
+            }
+
+        }
+        button{
+            height: 45px;
+            width: 20px;
+            border: none;
+            outline: none;
+            border-radius: 0px 20px 20px 0px;
+            font-size: 1rem;
+            background-color: $bg-color;
+            cursor: pointer;
+        }
+        input{
+            height: 60px;
+            border: none;
+            outline:none;
+            border-radius: 20px 0px 0px 20px;
+            font-size: 1.5rem;
+            background-color: $bg-color;
+            font-family: 'Vollkorn', serif;
+            transition: all ease-in-out 0.4s;
+            margin-left: 100px;
+        }
     }
     .cartesContainer{
         border: 1px solid black;
         height: 1950px;
-    }
-    .cartes{
-        display: flex;
-        border: 1px solid red;
-        height: 1700px;
-        width: 1400px;
-        margin: auto;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .carteUne{
-        border: 1px solid green;
-        margin-top: 100px;
-        height: 700px;
-        width: 500px;
-        margin-right: 50px;
-        box-sizing: border-box;
-        display: block;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 500ms;
-        &:hover{
-            transform: scale(1.15);
-        }
-    }
-    .carteDeux{
-        margin-top: 100px;
-        border: 1px solid green;
-        height: 700px;
-        width: 500px;
-        text-decoration: none;
-        box-sizing: border-box;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 500ms;
-        &:hover{
-            transform: scale(1.15);
-        }
-    }
-    .carteTrois{
-        border: 1px solid green;
-        height: 700px;
-        width: 500px;
-        margin-right: 50px;
-        box-sizing: border-box;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 500ms;
-        &:hover{
-            transform: scale(1.15);
-        }
-    }
-    .carteQuatre{
-        border: 1px solid green;
-        height: 700px;
-        width: 500px;
-        transform: scale(1);
-        box-sizing: border-box;
-        transition-property: transform;
-        transition-duration: 500ms;
-        &:hover{
-            transform: scale(1.15);
-        }
-    }
+            .cartes{
+                display: flex;
+                border: 1px solid red;
+                height: 1700px;
+                width: 1400px;
+                margin: auto;
+                justify-content: center;
+                flex-wrap: wrap;
+                    .carteUne{
+                        border: 1px solid green;
+                        margin-top: 100px;
+                        height: 700px;
+                        width: 500px;
+                        margin-right: 50px;
+                        box-sizing: border-box;
+                        text-decoration: none;
+                        display: block;
+                        transform: scale(1);
+                        transition-property: transform;
+                        transition-duration: 500ms;
+                        &:hover{
+                            transform: scale(1.15);
+                        }
+                        .carteUneContenu{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 700px;
+                            width: 500px;
+                            p{
+                                text-decoration: none;
+                                color: darkslategrey;
+                                font-size: 30px;
+                            }
+                            i{
+                               color: #000000;
+                               font-size: 30px; 
+                            }
+                        }                    
+                    }
+                    .carteDeux{
+                        margin-top: 100px;
+                        border: 1px solid green;
+                        height: 700px;
+                        width: 500px;
+                        text-decoration: none;
+                        box-sizing: border-box;
+                        transform: scale(1);
+                        transition-property: transform;
+                        transition-duration: 500ms;
+                        &:hover{
+                            transform: scale(1.15);
+                        }
+                            .carteDeuxContenu{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                height: 700px;
+                                width: 500px;
+                                p{
+                                    text-decoration: none;
+                                    color: darkslategrey;
+                                    font-size: 30px;
+                                }
+                            }      
+                        }
+                        .carteTrois{
+                            border: 1px solid green;
+                            height: 700px;
+                            width: 500px;
+                            margin-right: 50px;
+                            box-sizing: border-box;
+                            transform: scale(1);
+                            transition-property: transform;
+                            transition-duration: 500ms;
+                            text-decoration: none;
+                            &:hover{
+                                transform: scale(1.15);
+                            }
+                            .carteTroisContenu{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                height: 700px;
+                                width: 500px;
+                                p{
+                                    text-decoration: none;
+                                    color: darkslategrey;
+                                    font-size: 30px;
+                                }
+                            }    
+                        }
+                        .carteQuatre{
+                            border: 1px solid green;
+                            height: 700px;
+                            width: 500px;
+                            transform: scale(1);
+                            box-sizing: border-box;
+                            transition-property: transform;
+                            transition-duration: 500ms;
+                            text-decoration: none;
+                            &:hover{
+                                transform: scale(1.15);
+                            }
+                            .carteQuatreContenu{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                height: 700px;
+                                width: 500px;
+                                p{
+                                    text-decoration: none;
+                                    color: darkslategrey;
+                                    font-size: 30px;
+                                }
+                            } 
+                        }
+                }
+            }
     .btn{
         display: flex;
         justify-content: center;
@@ -127,6 +227,7 @@ body{
     }
 }
 
+
 footer{
     .foot{
         height: 100px;
@@ -137,9 +238,14 @@ footer{
         position:fixed;
         width: 100%;
         bottom: 0;
+        justify-content: center;
         a{
             text-decoration: none;
             color: $bd-color;
+            font-size: 2.3rem;
+            margin-right: 350px;
+            margin-left: 350px;
+            margin-top: 30px;
         }
     }
 }
