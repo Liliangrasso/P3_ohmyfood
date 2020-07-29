@@ -2,7 +2,7 @@
 
 $bg-color: #f7f7f7;
 $bd-color: #fcca46;
-
+$ombre-color: #000;
 .container{
     display: flex;
 }
@@ -80,18 +80,15 @@ body{
         }
     }
     .cartesContainer{
-        border: 1px solid black;
         height: 1950px;
             .cartes{
                 display: flex;
-                border: 1px solid red;
                 height: 1700px;
                 width: 1400px;
                 margin: auto;
                 justify-content: center;
                 flex-wrap: wrap;
                     .carteUne{
-                        border: 1px solid green;
                         margin-top: 100px;
                         height: 700px;
                         width: 500px;
@@ -102,8 +99,10 @@ body{
                         transform: scale(1);
                         transition-property: transform;
                         transition-duration: 500ms;
+                        box-shadow: 0 0 25px 0 $ombre-color;
                         &:hover{
                             transform: scale(1.15);
+                            opacity: 0.5;
                         }
                         .carteUneContenu{
                             display: flex;
@@ -125,7 +124,7 @@ body{
                     }
                     .carteDeux{
                         margin-top: 100px;
-                        border: 1px solid green;
+                        box-shadow: 0 0 25px 0 $ombre-color;
                         height: 700px;
                         width: 500px;
                         text-decoration: none;
@@ -135,6 +134,7 @@ body{
                         transition-duration: 500ms;
                         &:hover{
                             transform: scale(1.15);
+                            opacity: 0.5;
                         }
                             .carteDeuxContenu{
                                 display: flex;
@@ -151,7 +151,7 @@ body{
                             }      
                         }
                         .carteTrois{
-                            border: 1px solid green;
+                            box-shadow: 0 0 25px 0 $ombre-color;
                             height: 700px;
                             width: 500px;
                             margin-right: 50px;
@@ -162,6 +162,7 @@ body{
                             text-decoration: none;
                             &:hover{
                                 transform: scale(1.15);
+                                opacity: 0.5;
                             }
                             .carteTroisContenu{
                                 display: flex;
@@ -178,7 +179,7 @@ body{
                             }    
                         }
                         .carteQuatre{
-                            border: 1px solid green;
+                            box-shadow: 0 0 25px 0 $ombre-color;
                             height: 700px;
                             width: 500px;
                             transform: scale(1);
@@ -188,6 +189,7 @@ body{
                             text-decoration: none;
                             &:hover{
                                 transform: scale(1.15);
+                                opacity: 0.5;
                             }
                             .carteQuatreContenu{
                                 display: flex;

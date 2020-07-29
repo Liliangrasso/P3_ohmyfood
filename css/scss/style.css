@@ -73,12 +73,10 @@ body .recherche input {
   margin-left: 100px;
 }
 body .cartesContainer {
-  border: 1px solid black;
   height: 1950px;
 }
 body .cartesContainer .cartes {
   display: flex;
-  border: 1px solid red;
   height: 1700px;
   width: 1400px;
   margin: auto;
@@ -86,7 +84,6 @@ body .cartesContainer .cartes {
   flex-wrap: wrap;
 }
 body .cartesContainer .cartes .carteUne {
-  border: 1px solid green;
   margin-top: 100px;
   height: 700px;
   width: 500px;
@@ -97,9 +94,11 @@ body .cartesContainer .cartes .carteUne {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
+  box-shadow: 0 0 25px 0 #000;
 }
 body .cartesContainer .cartes .carteUne:hover {
   transform: scale(1.15);
+  opacity: 0.5;
 }
 body .cartesContainer .cartes .carteUne .carteUneContenu {
   display: flex;
@@ -120,7 +119,7 @@ body .cartesContainer .cartes .carteUne .carteUneContenu i {
 }
 body .cartesContainer .cartes .carteDeux {
   margin-top: 100px;
-  border: 1px solid green;
+  box-shadow: 0 0 25px 0 #000;
   height: 700px;
   width: 500px;
   text-decoration: none;
@@ -131,6 +130,7 @@ body .cartesContainer .cartes .carteDeux {
 }
 body .cartesContainer .cartes .carteDeux:hover {
   transform: scale(1.15);
+  opacity: 0.5;
 }
 body .cartesContainer .cartes .carteDeux .carteDeuxContenu {
   display: flex;
@@ -146,7 +146,7 @@ body .cartesContainer .cartes .carteDeux .carteDeuxContenu p {
   font-size: 30px;
 }
 body .cartesContainer .cartes .carteTrois {
-  border: 1px solid green;
+  box-shadow: 0 0 25px 0 #000;
   height: 700px;
   width: 500px;
   margin-right: 50px;
@@ -158,6 +158,7 @@ body .cartesContainer .cartes .carteTrois {
 }
 body .cartesContainer .cartes .carteTrois:hover {
   transform: scale(1.15);
+  opacity: 0.5;
 }
 body .cartesContainer .cartes .carteTrois .carteTroisContenu {
   display: flex;
@@ -173,7 +174,7 @@ body .cartesContainer .cartes .carteTrois .carteTroisContenu p {
   font-size: 30px;
 }
 body .cartesContainer .cartes .carteQuatre {
-  border: 1px solid green;
+  box-shadow: 0 0 25px 0 #000;
   height: 700px;
   width: 500px;
   transform: scale(1);
@@ -184,6 +185,7 @@ body .cartesContainer .cartes .carteQuatre {
 }
 body .cartesContainer .cartes .carteQuatre:hover {
   transform: scale(1.15);
+  opacity: 0.5;
 }
 body .cartesContainer .cartes .carteQuatre .carteQuatreContenu {
   display: flex;
