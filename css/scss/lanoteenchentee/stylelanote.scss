@@ -1,0 +1,36 @@
+
+body{
+    .recherche{
+        .search-box{
+            width: 92%;
+        }
+
+    }
+
+    .laNoteContainer{
+        display: flex;
+        margin: auto;
+        border: solid 1px red;
+        height: 1650px;
+        width: 1200px;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        .titreCarte{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .laNote{
+            display: flex;
+            height: 1300px;
+            width: 900px;
+            border: solid 1px green;
+            margin-bottom: 200px;
+        }
+    }
+
+}
+
+
